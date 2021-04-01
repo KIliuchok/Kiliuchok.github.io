@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ECWheel Bootstrap Template - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <a href="index.html"><img src="assets/img/sdp-logo.png" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="system.html">System</a></li>
+          <li><a class="nav-link scrollto" href="howitworks.html">How it Works?</a></li>
+          <li><a class="nav-link scrollto" href="evaluation.html">Evaluation</a></li>
+          <li><a class="nav-link scrollto" href="budget.html">Budget</a></li>
+          <li><a class="nav-link scrollto" href="about.html">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="system">
+    <div class="hero-container">
+      <h1>System</h1>
+      <h2>How is ECWheel made?</h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div id="corps_central"> 
+
+          <h1>Concept</h1>
+          <!-- <p>Summarise what your system does, its target market and uses cases here</p> -->
+          <p>EC Wheel is used to move people with minimal physical effort and without external assistance by providing an addon that will motorise existing any wheelchairs by powering the wheels.</p>
+          <p>While EC Wheel can help anyone with limited control on their legs, it will provide much more benefit to the elderly and those with specific disabilities such as partial paralysis.</p>
+          
+          <h2><a href="#Functionality">Functionality</a></h2>
+    <!-- <p>What features does your system have? Why should a viewer/investor be interested?      </p>   -->
+
+          <h3>Anatomy</h3>
+          
+          The device compromises of:
+          <ul>
+            <li>Two Controllers</li>
+            <li>Two 12V 12AH Mobility Scooter Batteries</li>
+            <li>Two 8A rated motors inside the Controllers</li>
+          </ul>
+          <p>The device is clamped on each side of the wheelchair handle via 2 25mm clamps on the left and on the right, connected with a Carbon Fibre Support plate. Below, you may see how the add-on looks like without the outer shell.</p>
+
+          <img src="schematic-final-transparent.png" alt="" style="width: 50%"> 
+
+          <p>The device is also connected with 3 fixed sensors with purpose of stopping the wheelchair from moving when it's close to an object to prevent the user from crashing.</p>
+
+          <img src="addon-outside.png" alt="" style="width: 50%"> 
+
+          <p>One sensor is shown at 6 from the above image showing that the wheelchair will decelerate and eventually stop when it detects a gap on the way, for example, stairs. A video below is showcasing how the wheelchair will stop.</p>
+
+          <video width="764" height="430" controls>
+            <source src="gap sensor.mov" type="video/mp4">
+          </video>
+
+          <p>This is what the wheelchair together with the device will look like.</p>
+
+          <img src="full.png" alt="" style="width: 50%"> 
+
+          <h3>TrackPad</h3>
+          <p>The user will guide the wheelchair by using the trackpad. The trackpad compromises of 4 side buttons and the radius navigation button:
+            <ul>
+              <li>On/Off</li>
+              <li>Automatic Cruise Control</li>
+              <li>Enable/Disable collision detection</li>
+              <li>SOS button</li>
+            </ul>
+          </p>
+          <img src="trackpad.png" alt="" style="width: 50%"> 
+
+          <p>The way the user directs the wheelchair, the TrackPad input button is broken down into 4 different radius sectors, each indicating which direction the user wants to turn the wheelchair.</p>
+
+          <p>The sectors of the trackpad are illustrated as colours below.</p>
+
+          <img src="trackpad_input.png" alt="" style="height: 200px">
+
+          <p>Each colour from the above image indicates the following turning direction (0˚ indicates North):</p>
+          <ul>
+            <li>Green:      0˚</li>
+            <li>Turquoise:  90˚</li>
+            <li>Red:        180˚</li>
+            <li>Purple:     270˚</li>
+          </ul>
+
+          <p>By pressing on the appropriate position, the user will turn the wheelchair according to the degrees shown above.</p>
+
+          <h3>Collision Detection</h3>
+          <p>To ensure the safety of our users, we include 7 collision detection sensors with sole purpose to halt the wheelchair when an object gets close nearby. There is also a front downward facing sensor detecting if the user is about to drive over a ledge. In essence, the sensors cover a radius of 360˚.</p>
+          <p>Below, we include an illustration of where the sensors are located. Of course, the user has the option to turn off the collision detector by pressing on the yellow button on the trackpad.</p>
+          <img src="sensors.png" alt="">      
+
+          <h3>SOS Button</h3>
+          <p>Multiple accidents can happen with a wheelchair, including wanting to move to a couch, fall, or other crucial cases such as low batter and urgent help. The request will be sent to the Raspberry Pi hub where the nurses will be able to see the information and act accordingly.</p>
+          <img src="sos-button.png" alt="" style="width: 50%">  
+
+          <h3>GUI</h3>
+          <p>For the care houses, we provide one Raspberry Pi hub and relays placed around the care house which will allow all the wheelchairs to be connected. This is crucial for the SOS button to work so each of the nurses will receive the signals.</p>
+    
+          <p>The diagram below, it shows how the wheelchair will communicate to the main Raspberry Pi hub which the nurses are using. As you can see, the signal is sent throw 2 relays before it goes to the main Hub showing which wheelchair requires attention.</p>
+          <img src="gui.png" alt="" style="width: 50%">  
+          
+
+          </div>
+
+      </div>
+    </section><!-- End Our Portfolio Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ECWheel</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
